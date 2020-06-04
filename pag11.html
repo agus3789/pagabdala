@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Quiz</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/func.js"></script>
+  <!-- Remember to include jQuery :) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+  <style>
+      .carousel-inner img {
+    width: 50%;
+  }
+      .center 
+     {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+     }
+     form{margin-left: 10px;}
+    </style> 
+</head>
+<body class="bg-dark text-white">
+<nav class="navbar navbar-expand-xl bg-dark navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="#">
+    
+  </a>
+  
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Inicio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="pag1.html">¿Que es?</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="pag2.html">Sintomas</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="pag3.html">Prevención</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pag4.html">Mitos y verdades</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pag5.html">Mas información</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pag6.html">El Aedes aegypti</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pag7.html">Información para viajeros</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pag8.html">Fumigación</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pag9.html">Conicet</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pag10.html">Medidas Conicet</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-primary" href="pag11.html">Quiz</a>
+      </li>
+  </ul>
+</nav>
+
+<form id="Quiz" name="quiz">
+  <p>¿De que se habla en esta pagina?</p>
+  
+  <input type="radio"   name="q1" value="Dengue">Dengue<br>
+  <input type="radio"   name="q1" value="Zika">Zika<br>
+  <input type="radio"   name="q1" value="Chikungunya">Chikungunya<br>
+  <br>
+  <p>¿El dengue, zika y chikungunya son enfermedades de la pobreza?</p>
+  <input type="radio"   name="q2" value="SI">Si<br>
+  <input type="radio"   name="q2" value="NO">No<br>
+  <br>
+  <p>¿Las bajas temperaturas terminan con el mosquito transmisor de estas enfermedades?</p>
+  <input type="radio"   name="q3" value="SI">Si<br>
+  <input type="radio"   name="q3" value="NO">No<br>
+  <br>
+  <p>¿Todos los mosquitos transmiten el dengue, zika y chikungunya?</p>
+  <input type="radio"   name="q4" value="SI">Si<br>
+  <input type="radio"   name="q4" value="NO">No<br>
+  <br>
+  <p>¿El dengue, zika y chikungunya se transmiten de persona a persona?</p>
+  <input type="radio"   name="q5" value="SI">Si<br>
+  <input type="radio"   name="q5" value="NO">No<br>
+  <br>
+  <p>¿El mosquito sólo pica de día?</p>
+  <input type="radio"   name="q6" value="SI">Si<br>
+  <input type="radio"   name="q6" value="NO">No<br>
+  <br>
+  <p>¿Colocar borra de café en el agua de las plantas mata las larvas de los mosquitos?</p>
+  <input type="radio"   name="q7" value="SI">Si<br>
+  <input type="radio"   name="q7" value="NO">No<br>
+  <br>
+  <p>¿Tomar vitamina B impide la picadura del mosquito?</p>
+  <input type="radio"   name="q8" value="SI">Si<br>
+  <input type="radio"   name="q8" value="NO">No<br>
+  <br>
+  <p>¿La aplicación de larvicidas es una medida recomendable para eliminar las larvas de todos los objetos?</p>
+  <input type="radio"   name="q9" value="SI">Si<br>
+  <input type="radio"   name="q9" value="NO">No<br>
+  <br>
+  <p>¿La fumigación termina con el dengue, zika y chikungunya?</p>
+  <input type="radio"   name="q10" value="SI">Si<br>
+  <input type="radio"   name="q10" value="NO">No<br>
+  <br>
+  <p>¿El mosquito que transmite dengue, zika y chikungunya se cría en charcos y zanjas?</p>
+  <input type="radio"   name="q11" value="SI">Si<br>
+  <input type="radio"   name="q11" value="NO">No<br>
+  <br>
+  <p>¿Que tan efectiva es la fumigacion contra el Aedes aegypti?</p>
+  <input type="radio"   name="q12" value="Muy efectiva">Muy efectiva<br>
+  <input type="radio"   name="q12" value="No es muy efectiva">No es muy efectiva<br>
+  <br>
+  <p>¿El dengue puede ser mortal?</p>
+  <input type="radio"   name="q13" value="SI">Si<br>
+  <input type="radio"   name="q13" value="NO">No<br>
+  <br>
+  <p>¿Existe una vacuna para prevenir el dengue?</p>
+  <input type="radio"   name="q14" value="SI">Si<br>
+  <input type="radio"   name="q14" value="NO">No<br>
+  <br>
+  <p>¿Cuanto dura la incubacion del dengue despues de la picadura?</p>
+  <input type="radio"   name="q15" value="A">entre 4 a 7 dias<br>
+  <input type="radio"   name="q15" value="B">entre 1 a 3 dias<br>
+  <br>
+  <p>¿El dengue se puede contraer a traves de relaciones sexuales?</p>
+  <input type="radio"   name="q16" value="SI">Si<br>
+  <input type="radio"   name="q16" value="NO">No<br>
+  <br>
+  <p>¿Cuales son los sintomas?</p>
+  <input type="radio" name="q17" value="A">Dolor en el cuerpo, fiebre alta, vomitos, etc<br>
+  <input type="radio" name="q17" value="B">Dolor abdominal intenso, sangrado de encias o nariz, dificultad para respirar, etc<br>
+  <input type="radio" name="q17" value="C">Ambas son correctas<br>
+  <br>
+  <input id="button" type="button" value="Termine" onclick="check();">
+</form>
+<br>
+</body>
+</html>
